@@ -1,21 +1,32 @@
 {
-    "compilerOptions": {
-      "target": "es2017",
+  "compilerOptions": {
+      "target": "es5",
+      "downlevelIteration": true,
       "module": "commonjs",
-      "lib": ["es6"],
       "allowJs": true,
       "outDir": "./dist",
-      "rootDir": "./",
-      "typeRoots": ["./src/@types", "node_modules/@types"],
-      "removeComments": true,
       "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": false,
+      "skipLibCheck": true,
+      "declaration": true,
+      "baseUrl": "./",
       "resolveJsonModule": true,
+      "removeComments": true,
       "experimentalDecorators": true,
       "emitDecoratorMetadata": true,
-      "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true
-    },
-    "include": ["./src/**/*"],
-    "exclude": ["node_modules"]
-  }
-  
+      "paths": {
+          "@/*": ["./src/*"]
+      },
+      "allowSyntheticDefaultImports": true
+  },
+  "exclude": [
+      "node_modules",
+      "dist",
+      "/modules",
+      "jest.config.js",
+      "commitlint.config.js",
+      "_devops",
+      "generators"
+  ]
+}
