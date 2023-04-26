@@ -1,32 +1,32 @@
 {
   "compilerOptions": {
-      "target": "es5",
-      "downlevelIteration": true,
-      "module": "commonjs",
-      "allowJs": true,
-      "outDir": "./dist",
-      "esModuleInterop": true,
-      "forceConsistentCasingInFileNames": true,
-      "strict": false,
-      "skipLibCheck": true,
-      "declaration": true,
-      "baseUrl": "./",
-      "resolveJsonModule": true,
-      "removeComments": true,
-      "experimentalDecorators": true,
-      "emitDecoratorMetadata": true,
-      "paths": {
-          "@/*": ["./src/*"]
-      },
-      "allowSyntheticDefaultImports": true
+    "target": "es2017",
+    "downlevelIteration": true,
+    "module": "commonjs",
+    "allowJs": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "declaration": true,
+    "baseUrl": "./",
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "allowSyntheticDefaultImports": true
   },
   "exclude": [
-      "node_modules",
-      "dist",
-      "/modules",
-      "jest.config.js",
-      "commitlint.config.js",
-      "_devops",
-      "generators"
+    "node_modules",
+    "dist",
+    "/modules",
+    "jest.config.js",
+    "commitlint.config.js",
+    "_devops",
+    "generators"
   ]
 }
