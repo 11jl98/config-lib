@@ -7,7 +7,7 @@ module.exports = {
             port: 3306,
             user: 'root',
             password: process.env.PASSWORD_BD || "123456",
-            database: 'store-manager'
+            database: 'store_manager'
         },
         migrations: {
             tableName: 'knex_migrations'

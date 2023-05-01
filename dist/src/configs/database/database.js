@@ -13,7 +13,7 @@ exports.database = (0, knex_1.default)({
         port: 3306,
         user: 'root',
         password: process.env.PASSWORD_BD || "123456",
-        database: 'store-manager',
+        database: 'store_manager',
         decimalNumbers: true,
         dateStrings: true
     }
