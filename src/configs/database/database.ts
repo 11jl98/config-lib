@@ -8,7 +8,7 @@ export const database = knex({
     port: 3306,
     user: 'root',
     password: process.env.PASSWORD_BD || "123456",
-    database: 'app',
+    database: 'store-manager',
     decimalNumbers: true,
     dateStrings: true
   }
