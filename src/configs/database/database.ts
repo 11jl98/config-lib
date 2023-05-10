@@ -1,15 +1,22 @@
-import knex from 'knex'
-import 'dotenv/config'
+import knex from "knex";
+import "dotenv/config";
 
-export const database = knex({
-  client: 'mysql2',
-  connection: {
-    host: 'localhost',
-    port: 3306,
-    user: 'root',
-    password: process.env.PASSWORD_BD || "123456",
-    database: 'store_manager',
-    decimalNumbers: true,
-    dateStrings: true
-  }
-})
+export const database = (
+  database: string,
+  user: string,
+  password: string,
+  host: string
+) => {
+  return knex({
+    client: "mysql2",
+    connection: {
+      host: host,
+      port: 3306,
+      user: user,
+      password: password,
+      database: database,
+      decimalNumbers: true,
+      dateStrings: true,
+    },
+  });
+};

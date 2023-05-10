@@ -12,9 +12,8 @@ function authMiddlewares(request, response, next) {
     const token = authorization.replace("Bearer", "").trim();
     try {
         const data = jsonwebtoken_1.default.verify(token, process.env.PASSWORD_JWT);
-        const { id, rule } = data;
+        const { id } = data;
         request.id_user = id;
-        request.rule_user = rule;
         next();
     }
     catch (error) {

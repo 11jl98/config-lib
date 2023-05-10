@@ -3,7 +3,6 @@ import jwt from "jsonwebtoken";
 
 interface tokenPayload {
   id: string;
-  rule: string;
   iat: number;
   exp: number;
 }
@@ -21,9 +20,8 @@ export function authMiddlewares(
 
   try {
     const data = jwt.verify(token, process.env.PASSWORD_JWT);
-    const { id, rule } = data as tokenPayload;
+    const { id } = data as tokenPayload;
     request.id_user = id;
-    request.rule_user = rule;
     next();
   } catch (error) {
     return response.sendStatus(401);
