@@ -1,6 +1,6 @@
 {
   "name": "configs-lib-store-manager",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "lib para conrole dos meus ms",
   "main": "index.js",
   "type": "commonjs",
