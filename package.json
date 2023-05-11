@@ -1,6 +1,6 @@
 {
   "name": "configs-lib-store-manager",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "lib para conrole dos meus ms",
   "main": "index.js",
   "type": "commonjs",
@@ -25,6 +25,7 @@
     "@types/multer": "^1.4.7",
     "awilix": "^7.0.3",
     "awilix-express": "^7.0.0",
+    "axios": "^1.4.0",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
